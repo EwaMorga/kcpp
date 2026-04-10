@@ -83,22 +83,27 @@ void tablice() {
   /* for(int w = 0; w < 10; w++) {
    *   cout << "Tab A: " << A[w] << endl;
    * } */
-  // CoutWholeArray(A, 10);
+  CoutWholeArray(A, 10);
+  int AA[6] = {}; ///< It is posiible in a new version
+  CoutWholeArray(AA, 6);
 
   int A0[10]; ///< Array of 10 integers, uninitialized
-  /* for(int w = 0; w < 10; w++) {
-   *   cout << "Tab A0: " << A0[w] << endl;
-   * } */
-  // CoutWholeArray(A0, 10);
+  /* for (int w = 0; w < 10; w++) {
+    cout << "Tab A0: " << A0[w] << endl;
+  } */
+  CoutWholeArray(A0, 10);
 
   int A1[] = {1, 2, 3,
               4, 5, 6}; ///< Array of 6 integers, initialized with values
-  // CoutWholeArray(A1, 6);
+  CoutWholeArray(A1, 6);
 
   // int A2[6] = {0}; ///< Array of 6 integers, initialized to 0
   int A2[6] = {
-      6}; ///< Array of 6 integers, first element initialized to 6, rest to 0
-  // CoutWholeArray(A2, 6);
+      7}; ///< Array of 6 integers, first element initialized to 7, rest to 0
+  CoutWholeArray(A2, 6);
+  int A21[6] = {7, 2}; ///< Array of 6 integers, first element initialized to 7,
+                       ///< second 2, rest to 0
+  CoutWholeArray(A21, 6);
 
   int A3[6]{0, 0, 1,
             0, 0, 0}; ///< Array of 6 integers, initialized with specific values
@@ -114,9 +119,9 @@ void tablice() {
   // Array of 20 characters, partially initialized
   char B[i] = {'a', 'b', 'c', 'd', 'e', 'f'};
   // char B[6] = {'a', 'b', 'c', 'd', 'e', 'f'};
-  /* for (int w = 0; w < i; w++) {
-   *   cout << B[w] << endl;
-   * } */
+  for (int w = 0; w < i; w++) {
+    cout << B[w] << endl;
+  }
 
   int BB[j] = {0, 1, 2, 3}; ///< Array of 10 integers, partially initialized
 
@@ -140,17 +145,18 @@ void tablice() {
       17; ///< Initialize element 2 with value 17 using pointer arithmetic
   *(A + 3) = *(A + 2) + 1; ///< Initialize element 3 with value *(A + 2) + 1
 
-  // Print array elements
+  /// Print array elements
   for (k = 0; k < 10; k++) {
     cout << "A[" << k << "]= " << *(A + k) << "\t\t" << A[k] << endl;
   }
 
-  //---------------------------------------------------------------
-  // Examples: try pre and post incrementation
-  //---------------------------------------------------------------
+  /* ---------------------------------------------------------------
+  Examples: try pre and post incrementation
+  --------------------------------------------------------------- */
   cout << "\nA[0] = " << A[0] << endl;
   (*A)++;
-  // (*A++);     ///< error, prosze powiedziec dlaczego?
+  // (*A++); ///< error, prosze powiedziec dlaczego?
+  // *(A++); ///< error, prosze powiedziec dlaczego?
   int fVar = (*A)++;
   cout << "fVar =   " << fVar << endl;
   cout << "(*A)++ = " << (*A)++ << endl;

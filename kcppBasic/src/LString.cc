@@ -28,26 +28,28 @@ int main() {
   /* Based on https://pl.wikibooks.org/wiki/C%2B%2B/String
    * Look also at: https://cplusplus.com/reference/string/string/ */
 
-  // String initialization
+  /// String initialization
   string napis1;
   napis1 = "text1";
 
-  // Initialize a string at the time of creation
-  string napis2("text2");
-
-  // Use the assignment operator
+  /// Use the assignment operator
   string napis3 = "text3";
 
-  // Print the strings
+  /// Initialize a string at the time of creation
+  string napis2("text2");
+
+  /// Initialize a string with repeated characters
+  string napis4(10, 'X');
+
+  /// Print the strings
+  cout << endl << "Wypisywanie napisów" << endl;
+  cout << "----------------------------------------" << endl;
   cout << "napis1: " << napis1 << endl
        << "napis2: " << napis2 << endl
-       << "napis3: " << napis3 << endl;
+       << "napis3: " << napis3 << endl
+       << "napis4: " << napis4 << endl;
 
-  // Initialize a string with repeated characters
-  string napis4(10, 'X');
-  cout << "napis4: " << napis4 << endl;
-
-  // String manipulation
+  /// String manipulation
   cout << endl << "Manipulacja stringami" << endl;
   cout << "----------------------------------------" << endl;
   string a1, b1;
@@ -55,14 +57,15 @@ int main() {
   b1 = '2';
   a1 = b1;
   cout << "a1 = b1: " << a1 << endl;
+  cout << "b1: " << b1 << endl;
 
-  // Check addresses
+  /// Check addresses
   cout << endl << "Sprawdzenie adresow" << endl;
   cout << "----------------------------------------" << endl;
   cout << "Address of a1: " << &a1 << endl;
   cout << "Address of b1: " << &b1 << endl;
 
-  // String comparison
+  /// String comparison
   string a, b, c;
   a = "gosia";
   b = "iza";
@@ -77,7 +80,7 @@ int main() {
   cout << "Address of a: " << &a << endl;
   cout << "Address of c: " << &c << endl;
 
-  // Lexicographical order example
+  /// Lexicographical order example
   cout << endl << "Przyklad porzadku leksykograficznego" << endl;
   cout << "----------------------------------------" << endl;
   a = "adad";
@@ -90,7 +93,9 @@ int main() {
   else
     cout << "nieprawda\n";
 
-  // String concatenation
+  /// String concatenation
+  cout << endl << "String concatenation" << endl;
+  cout << "----------------------------------------" << endl;
   a = "mal" + a;
 
   cout << "napis a (" << a << ") poprzedza napis b (" << b << "): ";
@@ -99,7 +104,9 @@ int main() {
   else
     cout << "nieprawda\n";
 
-  // String modification
+  /// String modification
+  cout << endl << "String modification" << endl;
+  cout << "----------------------------------------" << endl;
   b[1] = '_';
   cout << "zmieniony wyraz b: " << b << '\n';
 

@@ -12,7 +12,8 @@
  */
 
 #include <stdio.h>
-
+// #include <iostream>
+//
 /**
  * @brief Function to print "Hello World!"
  *
@@ -20,6 +21,7 @@
  * console.
  */
 void Funkcja(void) { printf("Hello World!\n"); }
+// void Funkcja(void) { std::cout << "Hello World!" << std::endl; }
 
 /**
  * @brief Main function

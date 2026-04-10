@@ -3,8 +3,8 @@ mail: arkadiusz@buabk.pl
 date: 2026.03.20, v0.01
 */
 
-#ifndef WorlExampleZero_H
-#define WorlExampleZero_H 1
+#ifndef WorkExampleZero_H
+#define WorkExampleZero_H 1
 
 class WorkExampleZero {
 public:
@@ -15,14 +15,10 @@ public:
   ~WorkExampleZero();
 
   /** Modifiers **/
-  void SetPlate(int rplate) { fPlate = rplate; };
-  void SetFakePlate(int fplate) { fFakePlate = fplate; };
-  void SetColor(int color) { fColor = color; };
+  void SetVariable(int rVariable) { fVariable = rVariable; };
 
   /** Accesors **/
-  int GetPlate() { return fPlate; };
-  int GetFakePlate() { return fFakePlate; };
-  int GetColor() { return fColor; };
+  int GetVariable() { return fVariable; };
 
   void Print();
 
@@ -30,12 +26,12 @@ public:
   // function definitions for this class. This function definition
   // has been moved to a separate file, WorkExampleZeroOne.cxx, instead of
   // being in the WorkExampleZero.cxx class source file.
-  void WorkExampleA();
+  void WorkExampleZeroA();
+  void WorkExampleZeroB();
+  void WorkExampleZeroC();
 
 private:
-  int fPlate;
-  int fFakePlate;
-  int fColor;
+  int fVariable;
 };
 
 #endif

@@ -14,13 +14,4 @@ WorkExampleZero::~WorkExampleZero() {
   cout << "The WorkExampleZero Object has been destroyed" << endl;
 };
 
-void WorkExampleZero::Print() {
-
-  cout << "---------------------------------------" << endl;
-  cout << "All about me:" << endl;
-  cout << "---------------------------------------" << endl;
-  cout << "Plate No.:     " << fPlate << endl;
-  cout << "FakePlate No.: " << fFakePlate << endl;
-  cout << "Color:         " << fColor << endl;
-  cout << "---------------------------------------\n\n" << endl;
-}
+void WorkExampleZero::Print() { cout << "Test print" << endl; };

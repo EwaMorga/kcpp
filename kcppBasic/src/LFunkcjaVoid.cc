@@ -47,10 +47,10 @@ void FunctionB(void) {
  * @return int Returns 0 on successful execution.
  */
 int main() {
-  // Call `FunctionA` to demonstrate a `void` return type
+  /// Call `FunctionA` to demonstrate a `void` return type
   FunctionA();
 
-  // Call `FunctionB` to demonstrate a `void` parameter
+  /// Call `FunctionB` to demonstrate a `void` parameter
   FunctionB();
 
   return 0;
