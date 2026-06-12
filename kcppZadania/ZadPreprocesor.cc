@@ -1,5 +1,5 @@
 /**
- * @file ZadStudent.cc
+ * @file ZadPreprocesor.cc
  * @author Ewa Morga
  * @date 11.06.2026
  */
